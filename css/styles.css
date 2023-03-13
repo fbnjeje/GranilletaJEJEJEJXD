@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color:#fded5a57;
+    --white:#FFF;
+    --black:#000;
+}
+
+#banner{
+    background:linear-gradient(rgba(0,0,0,0.5),var(--main-color)), url(../assets/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.logo{
+    width: 70px;
+    position:absolute;
+    top: 4%;
+    left: 7%;
+}
+.banner-text{
+    text-align: center;
+    color: var(--white);
+    padding-top: 180px; 
+}
+.banner-text h1{
+    font-size: 20vh;
+    font-family: 'Kaushan Script', cursive;
+}
+.banner-text p{
+    font-size: 3vh;
+    font-family: 'Pacifico', cursive;
+}
+.banner-btn{
+    margin: 70px auto 0;
+}
+.banner-btn a{
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin:  0 10px;
+    padding: 12px 0;
+    color:var(--white);
+    border: .5px solid var(--white);
+    position: relative;
+    z-index: 1;
+    transition: color .5s;
+}
+.banner-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:var(--white);
+    z-index: -1;
+    transition: .5s ease-in-out;
+}
+.banner-btn a:hover span{
+    width: 100%;
+    color: var(--black);
+}
+.banner-btn a:hover{
+    color:var(--black);
+}
+#sideNav{
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color:var(--main-color);
+}
+nav ul li{
+    list-style: none;
+    margin:  50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color:var(--white);
+}
+#menuBtn{
+    width: 50px;
+    height: 50px;
+    background-color: var(--main-color);
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    display: flex;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menuBtn img{
+    display: block;
+    width: 40px;
+    margin: 0 auto;
+}
